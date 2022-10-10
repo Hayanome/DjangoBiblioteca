@@ -1,0 +1,19 @@
+.resultado_busqueda_simple{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background: #0e8abf;
+    color: #000;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 70% auto;
+    justify-items: left;
+    border: 1px dashed blue;
+}

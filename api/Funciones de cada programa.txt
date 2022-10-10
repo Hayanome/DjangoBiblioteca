@@ -1,0 +1,4 @@
+models.py : aqui creamos todas las tablas mediante clases. la informacion de como esta dentro del archivo de manera comentada
+	https://www.youtube.com/watch?v=10_PpcLRaHk&ab_channel=Init
+	minutos 15 a 22
+admin.py: se registran los modelos que vamos a poder administrar y cuales vamos a dejar estaticos

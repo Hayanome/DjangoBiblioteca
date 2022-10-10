@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Metadatos de la pagina-->
+        <title>Biblioteca</title>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static '/resultado.css' %}"> 
+        <script type="text/javascript" src="{% static '/function.js' %}"></script>   
+        <link rel="icon" type="jpg" href="{% static '/imagenes/logo.jpg' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <header>
+            <div>
+                <p class="resultado_busqueda_simple">
+                    <input type="text" name="consulta" 
+                        style="height:30px; width: 400px; border: 2px solid rgb(18, 160, 211); text-align: center; font-weight: bold; font-size: medium;" 
+                        placeholder="Por favor escriba la palabra que desea buscar">
+                    <input type="button" value="Buscar" style="height: 35px; font-weight: bold; font-size: medium;border: 2px solid rgb(18, 160, 211);">
+                </p>
+        </header>
+        <main>
+            {% for libros in consulta %}
+            <section class="grid-container">
+                <div class="grid item">
+                    Título:{{libros.Nombre_Libro}}<br>
+                    Autor:{{libros.Autor}}<br>
+                    Disponible:{{libros.Estado}}
+                </div>
+                <div class="grid item boton">
+                    <input type="text" name="Documento" size="40" placeholder="Por favor introduzca su numero de documento"><br>
+                    <input type="button" value="reservar">
+            {% endfor %}
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
+<!--Revisar como cargar la informacion del servidor en la pagina-->
+<!--Montar javascript donde se pueda adicionar el numero de documento del solicitante-->

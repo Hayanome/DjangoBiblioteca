@@ -1,0 +1,22 @@
+Inicie el servidor desde el cmd asi:
+
+1. abra la carpeta donde se encuentra el archivo mediante el comando cd y la ruta de la carpeta del proyecto
+
+G:\>cd  G:\Mi unidad\Mision_tics\Ciclo 3\Proyecto biblioteca\myproject
+
+2. puede escribir dir para comprobar que este reconociendo todos los archivos pero esto es opcional
+
+G:\Mi unidad\Mision_tics\Ciclo 3\Proyecto biblioteca\myproject>dir
+
+3. escriba el comando python manage.py runserver para que arranque
+
+G:\Mi unidad\Mision_tics\Ciclo 3\Proyecto biblioteca\myproject>python manage.py runserver
+
+4. abra la pagina desde el navegador por medio del puerto 8000 asi:
+
+http://localhost:8000/index/
+
+usuario> Proyectobiblioteca
+correo> miguelangelantoniofernadez@gmail.com	
+Contrasena 123456
+
